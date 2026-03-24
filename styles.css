@@ -1,0 +1,42 @@
+#titulo-principal{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* El contenedor que organiza todo */
+.layout-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Cabecera y pie se ajustan, el centro crece */
+    min-height: 100vh;
+    gap: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Estilo para la tabla de calidad */
+.qa-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.qa-table th, .qa-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.qa-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* El SPAN que mencionamos antes para estados */
+.status-pass {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
