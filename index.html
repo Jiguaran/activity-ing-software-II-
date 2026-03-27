@@ -14,29 +14,105 @@
         <h1 id="titulo-principal">Bienvenido a la Prueba de Calidad de Software</h1>
     </header>
 
+    
     <main class="main-content">
-        <section class="intro-section">
-            <h2>Resultados de la Aplicación de la Prueba</h2>
-            <p>A continuación, se detalla el análisis de calidad mediante la siguiente tabla informativa:</p>
-        </section>
 
-        <section class="table-container">
-            <table class="qa-table">
-                <thead>
-                    <tr>
-                        <th>Criterio</th>
-                        <th>Estado</th>
-                        <th>Observaciones</th>
-                    </tr>
-                </thead>
+        <section id="recurso-educativo" class="card resource-section">
+            <h2>Plataforma Digital a evaluar</h2>
+            <table class="resource-table">
                 <tbody>
                     <tr>
-                        <td>Funcionalidad</td>
-                        <td><span class="status-pass">Aprobado</span></td>
-                        <td>Sin errores críticos.</td>
+                        <th>Nombre De Red</th>
+                        <td>El Espectador</td>
+                    </tr>
+                    <tr>
+                        <th>Campo</th>
+                        <td>Noticias / Educación / Ciencia / Tecnología</td>
+                    </tr>
+                    <tr>
+                        <th>Descripción</th>
+                        <td>Portal web de noticias y contenido educativo multimedia desarrollado en HTML5, con diseño adaptativo mediante CSS3 y JavaScript. Funciona como un repositorio de artículos, infografías y reportajes que permiten el desarrollo de la competencia lectora y el pensamiento crítico; integra videos embebidos, galerías y podcast.</td>
+                    </tr>
+          
+                    <tr>
+                        <th>Repositorio</th>
+                        <td>El Espectador es un medio de comunicación nacional de Colombia, informativo y pedagógico. Uno de los diarios más antiguos y respetados del país, propiedad de Comunican S.A.</td>
+                    </tr>
+                    <tr>
+                        <th>Licencia</th>
+                        <td>Copyright (Todos los derechos reservados). Acceso libre limitado (modelo freemium); uso pedagógico permitido con citación y respeto a la autoría.</td>
+                    </tr>
+                    <tr>
+                        <th>Área de aplicación</th>
+                        <td>Estudiantes Grado 7º a 11º — fortalece competencia lectora y ciudadana en Lengua Castellana o Ciencias Sociales mediante análisis de textos argumentativos y noticias.</td>
+                    </tr>
+                    <tr>
+                        <th>Link</th>
+                        <td><a href="https://www.elespectador.com/" target="_blank" rel="noopener noreferrer">https://www.elespectador.com</a></td>
                     </tr>
                 </tbody>
             </table>
+        </section>
+
+        <section class="intro-section">
+            <h2>Resultados de la Aplicación de la Prueba...</h2>
+            <p>A continuación, selecciona una norma para ver la evaluación base.</p>
+        </section>
+
+        <nav class="tabs" role="tablist" aria-label="Normas de evaluación">
+            <button class="tab-btn active" data-target="maccall" role="tab" aria-selected="true">MACCALL</button>
+            <button class="tab-btn" data-target="boehm" role="tab" aria-selected="false">BOEHM</button>
+            <button class="tab-btn" data-target="furps" role="tab" aria-selected="false">FURPS</button>
+        </nav>
+
+        <section class="panels">
+            <article id="maccall" class="eval-panel" role="tabpanel">
+                <h3>MACCALL — Evaluación rápida</h3>
+                <p class="panel-desc">Resumen de atributos: corrección, eficiencia, integridad, etc.</p>
+                <div class="card">
+                    <table class="qa-table">
+                        <thead>
+                            <tr><th>Criterio</th><th>Estado</th><th>Observaciones</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Corrección</td><td><span class="status-pass">Aprobado</span></td><td>Sin fallas críticas</td></tr>
+                            <tr><td>Eficiencia</td><td><span class="status-warning">Revisar</span></td><td>Optimizable</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article id="boehm" class="eval-panel hidden" role="tabpanel" aria-hidden="true">
+                <h3>BOEHM — Evaluación rápida</h3>
+                <p class="panel-desc">Resumen de atributos: coste, fiabilidad, mantenibilidad.</p>
+                <div class="card">
+                    <table class="qa-table">
+                        <thead>
+                            <tr><th>Criterio</th><th>Estado</th><th>Observaciones</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Fiabilidad</td><td><span class="status-pass">Aprobado</span></td><td>Estable</td></tr>
+                            <tr><td>Mantenibilidad</td><td><span class="status-warning">Parcial</span></td><td>Documentar más</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article id="furps" class="eval-panel hidden" role="tabpanel" aria-hidden="true">
+                <h3>FURPS — Evaluación rápida</h3>
+                <p class="panel-desc">Resumen de atributos: funcionalidad, usabilidad, rendimiento, soporte.</p>
+                <div class="card">
+                    <table class="qa-table">
+                        <thead>
+                            <tr><th>Criterio</th><th>Estado</th><th>Observaciones</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Usabilidad</td><td><span class="status-pass">Aprobado</span></td><td>Interfaz clara</td></tr>
+                            <tr><td>Rendimiento</td><td><span class="status-warning">Medir</span></td><td>Realizar pruebas de carga</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
         </section>
     </main>
 

@@ -59,3 +59,105 @@ html, body {
   letter-spacing: 1px;
 }
 
+/* Contenido principal centrado y con ancho máximo */
+.main-content {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+/* Más espacio en pantallas muy grandes */
+@media (min-width: 1400px) {
+    .main-content { padding: 20px 80px }
+}
+
+.intro-section p {
+    color: #333;
+}
+
+/* Pestañas */
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.tab-btn {
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #111827;
+}
+
+.tab-btn.active {
+    background: linear-gradient(90deg,#2563eb,#4f46e5);
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(37,99,235,0.15);
+}
+
+.panels {
+    margin-top: 8px;
+}
+
+.eval-panel {
+    animation: fadeIn .18s ease-in;
+}
+
+.hidden { display: none; }
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 6px 20px rgba(15,23,42,0.06);
+    margin-top: 12px;
+}
+
+.panel-desc { color: #555; margin: 0 0 8px 0 }
+
+.qa-table th, .qa-table td { font-size: 0.95rem }
+
+.status-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    #titulo-principal { font-size: 1.4rem }
+    .tabs { flex-direction: column; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px) }
+    to { opacity: 1; transform: translateY(0) }
+}
+
+/* Estilos para la tabla de recurso educativo (responsive) */
+.resource-section { margin-top: 1rem }
+.resource-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+.resource-table th, .resource-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+.resource-table th { background: #f8fafc }
+
+@media (max-width: 700px) {
+    /* Ajustes móviles: quitar min-width y permitir que la tabla se adapte verticalmente */
+    .resource-section { overflow-x: visible }
+    .resource-table { width: 100% }
+}
+
